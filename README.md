@@ -1,87 +1,80 @@
-📘 Introduction à l’OCT (Optical Coherence Tomography)
+## 🏥 Optical Coherence Tomography (OCT) — Introduction
 
-L’OCT – Optical Coherence Tomography est une technique d’imagerie médicale non invasive utilisée en ophtalmologie pour obtenir des images en coupe de la rétine avec une très haute résolution.
-C’est aujourd’hui l’un des examens essentiels pour diagnostiquer et suivre les maladies rétiniennes.
+L’Optical Coherence Tomography (OCT) est une technique d’imagerie médicale non invasive utilisée pour obtenir des images détaillées de la rétine.
+Grâce à sa haute résolution, l’OCT est aujourd’hui un outil essentiel en ophtalmologie pour le diagnostic, le suivi et la prise en charge des maladies oculaires.
 
-🧠 Principe de l’OCT
+## 👁️ Qu’est-ce que l’OCT ?
 
-L’OCT fonctionne comme une échographie basée sur la lumière :
+L’OCT fonctionne comme une échographie utilisant la lumière :
 
-Un faisceau lumineux est envoyé dans l’œil
+- un faisceau lumineux traverse l’œil,
 
-La lumière réfléchie par les différentes couches de la rétine est analysée
+- la lumière réfléchie par les différentes couches de la rétine est capturée,
 
-L’appareil reconstruit une image en coupe (B-scan) qui montre toutes les couches rétiniennes
+- une image en coupe (B-scan) est reconstruite.
 
-Grâce à sa précision (quelques microns), l’OCT permet d’observer des anomalies imperceptibles aux autres examens.
+Ce procédé permet de visualiser les structures microscopiques de la rétine avec une précision de quelques microns.
 
-👁️ Pourquoi l’OCT est important ?
+## 🩺 Pathologies détectables en OCT
 
-L’OCT est utilisé pour :
+Les images OCT permettent d’identifier plusieurs anomalies rétiniennes majeures, notamment :
 
-Diagnostiquer les maladies rétiniennes
+🔹 Choroidal Neovascularization (CNV)
 
-Suivre l’évolution d’une pathologie dans le temps
+Croissance anormale de vaisseaux sanguins sous la rétine, souvent associée à la DMLA.
 
-Vérifier l’efficacité d’un traitement
+🔹 Diabetic Macular Edema (DME)
 
-Détecter des anomalies avant l’apparition de symptômes
+Accumulation de liquide dans la macula chez les patients diabétiques.
 
-Il est devenu indispensable en ophtalmologie moderne.
+🔹 Drusen (AMD-related)
 
-🩺 Maladies détectables en OCT
+Dépôts sous-rétiniens visibles dans la dégénérescence maculaire liée à l’âge.
 
-L’OCT permet d’identifier plusieurs pathologies importantes :
+🔹 Normal Retina
 
-1. Choroidal Neovascularization (CNV)
+Rétine saine, avec des couches régulières sans anomalies.
 
-Apparition de nouveaux vaisseaux anormaux sous la rétine, souvent liée à la DMLA.
-L’OCT montre des soulèvements de la rétine et du liquide sous-rétinien.
+## 🖼️ Types d’images OCT
 
-2. Diabetic Macular Edema (DME)
+Les images OCT peuvent être :
 
-Gonflement de la macula causé par une fuite des vaisseaux sanguins chez les patients diabétiques.
-L’OCT montre un épaississement rétinien et des cavités kystiques.
+- B-scan : coupe transversale (le format le plus courant)
 
-3. Drusen (DMLA liée à l’âge)
+- Volume scan : ensemble de plusieurs B-scans
 
-Dépôts jaunâtres sous la rétine.
-Sur OCT, ils apparaissent comme des élévations sous l’épithélium pigmentaire.
+- En-face : vue en surface d’une couche rétinienne
 
-4. Normal Retina
+Le dataset utilisé dans ce projet contient principalement des B-scans.
 
-Une rétine saine montre des couches bien définies, continues et sans accumulation de liquide.
+## 📚 Dataset OCT (Kermany2018 / OCT2017)
 
-🖼️ Types d’images OCT
+Pour l'analyse et l'entraînement de modèles IA, un dataset OCT public est communément utilisé :
+OCT2017 (Kermany2018).
 
-B-scan : coupe transversale de la rétine
+Il contient quatre classes :
 
-Volume scan : ensemble de plusieurs B-scans
+- CNV
 
-En face : vue de dessus des différentes couches rétiniennes
+- DME
 
-Le dataset OCT que tu utilises contient principalement des images B-scan.
+- DRUSEN
 
-📚 Dataset OCT (Kermany2018 / OCT2017)
+- NORMAL
 
-Ce dataset public contient des milliers d’images OCT classées en quatre catégories :
+Ce dataset est l’un des plus utilisés dans la recherche pour entraîner des modèles de détection automatique de pathologies rétiniennes.
 
-CNV
+## 🎯 Objectif du projet
 
-DME
+Ce repository vise à :
 
-DRUSEN
+- représenter les images OCT et leur importance clinique,
 
-NORMAL
+- comprendre les caractéristiques visuelles permettant d’identifier une pathologie,
 
-Il est largement utilisé dans la recherche en intelligence artificielle pour l’analyse automatique des images OCT.
+- utiliser l’OCT comme base pour le développement de modèles d’IA en imagerie médicale.
 
-🎯 Objectif du projet
+## 🧬 Conclusion
 
-Utiliser l’OCT pour :
-
-comprendre les structures rétiniennes,
-
-identifier les anomalies,
-
-entraîner des modèles d’IA capables de reconnaître automatiquement les pathologies.
+L’OCT est aujourd’hui la méthode la plus avancée pour visualiser la rétine en profondeur.
+Combinée à l’intelligence artificielle, elle permet de créer des outils puissants pour le diagnostic assisté et le dépistage précoce des maladies oculaires.
